@@ -55,4 +55,21 @@ array.map(x => { return x*x; });
 array.map( item => ({ name: item.name, value: item.x + 5 }) );
 ```
 
+## About `this`
 
+Arrow functions use lexical binding, which is a fancy way
+of saying they inherit "this" from where they are defined.
+
+```js
+function MyKlass(){
+	this.name = 'klass name';
+}
+
+MyKlass.prototype.foo = function(){
+	setTimeout(() => {
+		console.log( this.name ); // klass-name
+	})
+}
+```
+
+They are "context-less" and cannot be bound using `bind`, `call`, or `apply`
