@@ -1,6 +1,15 @@
 
 # Fat Arrows
 
+## Compare to `function`
+
+```
+function(x) {
+	return x + 5;
+}
+```
+_becomes_
+
 ```
 (x) => {
 	return x + 5;
@@ -18,8 +27,9 @@ x => {
 
 ### returns single expression? 
 _block delimiters and return statement may be omitted..._
+
 ```
-x => return x + 5
+x => x + 5
 ```
 
 ## More rules
@@ -40,7 +50,7 @@ array.map((item, i) => {
 
 ### Parens required with destructuring
 ```
-todos.map( ({task, done }) => {
+todos.map(({ task, done }) => {
 	//...
 });
 ```
