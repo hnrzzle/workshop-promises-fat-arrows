@@ -12,7 +12,7 @@ Agenda
 * Promises
 	* From [callbacks to promises](callback-to-promise.md)
 	* [Promise chaining](promise-chaining.md)
-	* Add in error handling...
+	* Add in [error handling](error-handling.md)...
 	* `Promise.all()`
 	* `Promise.resolve()` and `Promise.reject()`
 	* Cascading shared data
