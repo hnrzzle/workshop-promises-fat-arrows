@@ -1,5 +1,5 @@
 
-# Fat Arrows
+# `=>` Arrows Functions
 
 ## Compare to `function`
 

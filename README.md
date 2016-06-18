@@ -12,7 +12,7 @@ Agenda
 	* [Setup Check](setup-check.md)
 * Background
 	* What's the [issue with callbacks](why-not-callbacks.md)?
-	* (Fat) [arrow functions](fat-arrows.md)
+	* `=>` (fat) [arrow functions](fat-arrows.md)
 	* What's [async](async-js-patterns.md)?
 * Promises
 	* From [callbacks to promises](callback-to-promise.md)

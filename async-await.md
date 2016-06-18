@@ -17,7 +17,7 @@ function getOrderDetails(orderId) {
 ```js
 async function getOrderDetails(orderId) {
   const order = await db.find( "orders", orderId );
-	order.customer = await db.find( "customers"), order.customerId );
-	return order
+	order.customer = await db.find( "customers", order.customerId );
+	return order;
 }
 ```

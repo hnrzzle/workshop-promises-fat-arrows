@@ -17,11 +17,11 @@ __OR__
 * result of promise if return value was a promise
 
 ```js
-myAsyncFn()
+myPromiseFn()
 	.then(result => result + 5);
 	.then(sum => {
-		const foo = getFoo(sum);
-		return myOtherAsyncFn(foo);
+		const foo = calcFoo(sum);
+		return myOtherPromiseFn(foo);
 	})
 	.then(bar => console.log(bar));
 ```

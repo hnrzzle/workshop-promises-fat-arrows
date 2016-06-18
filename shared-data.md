@@ -32,7 +32,6 @@ function getOrderDetails(orderID) {
 }
 ```
 
-
 ```js
 function getOrderDetails(orderID) {
   return db.find("orders", orderID)

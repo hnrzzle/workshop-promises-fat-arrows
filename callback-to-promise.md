@@ -11,11 +11,9 @@ from callbacks?
 function myAsyncFn( callback ) {
 
 	setTimeout( () => {
-		// we need to call callback here
 		callback();
 	}, 1000);
-	
-	// could we return something that could be used?
+
 };
 
 myAsyncFn( 'xyz', () => {
@@ -23,16 +21,22 @@ myAsyncFn( 'xyz', () => {
 });
 
 ```
-
+becomes
 
 ```js
 function myAsyncFn() {
+
 	var callback = null;
 
 	setTimeout( () => {
+		// we need a callback by the time
+		// setTimeout callback happens
 		if ( callback ) callback();
 	}, 1000);
 
+
+	// instead, return an object that has
+	// function that sets the callback
 	return {
 		then( cb ){
 			callback = cb;
@@ -51,14 +55,12 @@ myAsyncFn().then(() => {
 
 ```js
 function myAsyncFn( input ) {
-	var callback = null;
-	var errCallback = null;
+	let callback = ()=>{};
+	let errCallback = ()=>{};
 
 	fs.readFile( input, ( err, buffer ) => {
-		if ( err ) {
-			return if ( errCallback ) errCallback( err );
-		}
-		if ( callback ) callback( buffer );
+		if ( err ) errCallback( err );
+		else callback( buffer );
 	});
 
 	return {
