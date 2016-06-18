@@ -14,8 +14,7 @@ Agenda
 	* From [callbacks to promises](callback-to-promise.md)
 	* [Promise chaining](promise-chaining.md)
 	* Add in [error handling](error-handling.md)...
-	* [`Promise.all()`](promise-all.md)
-	* `Promise.resolve()` and `Promise.reject()`
+	* [Promise static methods](promise-static.md)
 	* Cascading shared data
 	* Other promise libraries
 * Looking forward to `async` and `await`
