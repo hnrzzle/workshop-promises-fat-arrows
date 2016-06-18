@@ -48,8 +48,8 @@ function getOrderDetails(orderId) {
   let _order;
   return db.find( "orders", orderId )
     .then( order => _order = order )
-		.then( ({customerID}) => db.find( "customers") )
-		.then( customer => _order.customer = customer )
+    .then( ({customerID}) => db.find( "customers") )
+    .then( customer => _order.customer = customer )
     .then( () => _order );
 }
 ```

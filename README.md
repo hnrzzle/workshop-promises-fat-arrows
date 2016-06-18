@@ -19,7 +19,7 @@ Agenda
 	* [Promise chaining](promise-chaining.md)
 	* [Error handling](error-handling.md)...
 	* [Promise static methods](promise-static.md)
+* Design and the Future
 	* Cascading [shared data](shared-data.md)
 	* Other [promise libraries](other-libraries.md)
-* Looking forward
-> [`async` and `await`](async-await.md)
+	* [`async` and `await`](async-await.md)
