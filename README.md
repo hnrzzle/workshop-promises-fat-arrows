@@ -10,8 +10,8 @@ Agenda
 * What's the [issue with callbacks](why-not-callbacks.md)?
 * (Fat) [arrow functions](fat-arrows.md)
 * Promises
-	* From callbacks to promises
-	* Promise chaining
+	* From [callbacks to promises](callback-to-promise.md)
+	* [Promise chaining](promise-chaining.md)
 	* Add in error handling...
 	* `Promise.all()`
 	* `Promise.resolve()` and `Promise.reject()`
