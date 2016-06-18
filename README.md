@@ -9,11 +9,12 @@ Agenda
 * [Setup Check](setup-check.md)
 * What's the [issue with callbacks](why-not-callbacks.md)?
 * (Fat) [arrow functions](fat-arrows.md)
+* What's [async](async-js-patterns.md)?
 * Promises
 	* From [callbacks to promises](callback-to-promise.md)
 	* [Promise chaining](promise-chaining.md)
 	* Add in [error handling](error-handling.md)...
-	* `Promise.all()`
+	* [`Promise.all()`](promise-all.md)
 	* `Promise.resolve()` and `Promise.reject()`
 	* Cascading shared data
 	* Other promise libraries
