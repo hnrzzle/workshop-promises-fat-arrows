@@ -48,9 +48,9 @@ function getAllFiles( directory, cb ) {
 ```js
 function getAllFiles( directory ) {
 
-  return fsP.readdir( directory )
+  return fsPromise.readdir( directory )
     .then( files => files.map( f => directory + '/' + f ) )
-    .then( paths => paths.map( p => fsP.readFile( p, { encoding: 'utf-8' } ) ) )
+    .then( paths => paths.map( p => fsPromise.readFile( p, 'utf-8' ) )
     .then( filePromises => Promise.all( filePromises ) );
 
 }
