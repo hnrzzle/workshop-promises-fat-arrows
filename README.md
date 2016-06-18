@@ -5,15 +5,16 @@ NodePDX 2016 Workshop
 
 Agenda
 * Intros
+* Format: hand-on, try it out!
 * [Setup Check](setup-check.md)
 * What's the [issue with callbacks](why-not-callbacks.md)?
 * (Fat) [arrow functions](fat-arrows.md)
-* From callbacks to promises
-* Promise chaining
-* Add in error handling...
-* `Promise.all()`
-* `Promise.resolve()` and `Promise.reject()`
-* Cascading shared data
-* Other promise libraries
-* Where next?
-	* Looking forward to `async` and `await`
+* Promises
+	* From callbacks to promises
+	* Promise chaining
+	* Add in error handling...
+	* `Promise.all()`
+	* `Promise.resolve()` and `Promise.reject()`
+	* Cascading shared data
+	* Other promise libraries
+* Looking forward to `async` and `await`
