@@ -1,0 +1,32 @@
+{
+  "name": "promises-fat-arrows",
+  "version": "1.0.0",
+  "description": "taming async with promises and fat arrows workshop slides",
+  "main": "test.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martypdx/workshop-promises-fat-arrows.git"
+  },
+  "keywords": [
+    "nodepdx",
+    "workshop",
+    "2016",
+    "codefellows",
+    "promises",
+    "es6",
+    "es2015",
+    "javascript"
+  ],
+  "author": "Marty Nelson <marty@martypdx.com> (@martypdx)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martypdx/workshop-promises-fat-arrows/issues"
+  },
+  "homepage": "https://github.com/martypdx/workshop-promises-fat-arrows#readme"
+}

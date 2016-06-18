@@ -41,16 +41,18 @@ function getAllFiles( directory, cb ) {
 ## What's going on?
 
 1. Manually checking and propagating errors
-2. Orchestration of sequential (nested) and parallel (counter) tasks
+2. Orchestration of tasks
+    * sequential (nested code)
+    * parallel (results collation and callback counter)
 
 ### What's the alternative?
 
 ```js
-function getAllFiles( directory ) {
+function getAllFiles( dir ) {
 
-  return fsPromise.readdir( directory )
-    .then( files => files.map( f => directory + '/' + f ) )
-    .then( paths => paths.map( p => fsPromise.readFile( p, 'utf-8' ) )
+  return fsP.readdir( dir )
+    .then( files => files.map( f => `${dir}/${f}` ) )
+    .then( paths => paths.map( p => fsP.readFile( p, 'utf-8' ) )
     .then( filePromises => Promise.all( filePromises ) );
 
 }
