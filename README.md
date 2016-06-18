@@ -15,6 +15,6 @@ Agenda
 	* [Promise chaining](promise-chaining.md)
 	* Add in [error handling](error-handling.md)...
 	* [Promise static methods](promise-static.md)
-	* Cascading shared data
-	* Other promise libraries
-* Looking forward to `async` and `await`
+	* Cascading [shared data](shared-data.md)
+	* Other [promise libraries](other-libraries.md)
+* Looking forward to [`async` and `await`](async-await.md)
