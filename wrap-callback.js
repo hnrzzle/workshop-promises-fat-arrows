@@ -1,7 +1,7 @@
 const fs = require( 'fs' );
 
 function readMyFile( fileName ) {
-		
+		console.log( 'reading the file' );
 		const promise = new Promise( ( resolve, reject ) => {
 
 			fs.readFile( fileName, 'utf-8', ( err, text ) => {
@@ -14,8 +14,16 @@ function readMyFile( fileName ) {
 		return promise;
 };
 
-readMyFile( 'README.md' ).then( text => {
+var promise = readMyFile( 'foo.txt' );
+
+promise.then( text => {
 	console.log( text );
-},err => {
+}, err => {
+	console.log( 'ERROR!', err)
+});
+
+promise.then( text => {
+	console.log( text );
+}, err => {
 	console.log( 'ERROR!', err)
 });
