@@ -12,15 +12,13 @@ function readMyFile( fileName ) {
 		return promise;
 };
 
-const promise1 = readMyFile( 'foo.txt' );
-
-
-
 readMyFile( 'foo.txt' )
 	.then( text => {
-		console.log( 'promise1', text );
-		return text.toUpperCase();
+		return readMyFile( text.trim() );
+	})
+	.catch(err => {
+		return 'this is the default text';
 	})
 	.then( result => {
-		console.log( 'promise2', result );
+		console.log( 'final then', result );
 	});

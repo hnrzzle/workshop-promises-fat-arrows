@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/martypdx/workshop-promises-fat-arrows/issues"
   },
-  "homepage": "https://github.com/martypdx/workshop-promises-fat-arrows#readme"
+  "homepage": "https://github.com/martypdx/workshop-promises-fat-arrows#readme",
+  "dependencies": {
+    "sander": "^0.5.1"
+  }
 }
