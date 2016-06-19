@@ -20,7 +20,7 @@ getUsers(query)
 		.then(ids => ids.map(id => getGroup(id))
 		.then(Promise.all)
     .then(groups => {
-			
+			// do something with groups
 		});
 ```
 

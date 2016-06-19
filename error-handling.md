@@ -17,7 +17,7 @@ is short for:
 .then(null, err => {...})
 ```
 
-## Rejection "chains"
+## Resolve/Reject "chains"
 
 ```js
 someAsync()
