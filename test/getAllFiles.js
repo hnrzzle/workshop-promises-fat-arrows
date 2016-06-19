@@ -17,3 +17,10 @@ function readFile( fileName ) {
 			});
 		});
 };
+
+function getAllFiles( dir ) {
+
+}
+
+getAllFiles( __dirname + '/dir' )
+	.then( files => console.log( files ) );
