@@ -1,10 +1,13 @@
-![cf](http://i.imgur.com/7v5ASc8.png) Taming Asynchronous JavaScript with Promises and Fat Arrows
+![cf](http://i.imgur.com/7v5ASc8.png) Code Fellows NodePDX 2016 Workshop
 ===
 
-NodePDX 2016 Workshop
+### Taming Asynchronous JavaScript with Promises and Fat Arrows
 
-Agenda
 * Intros
+	* me, Code Fellows, facilities
+	* you?
+		* name, anything else we should know?
+		* why promises and arrow functions?
 * Workshop format:
 	* hands-on
 	* try it out!
