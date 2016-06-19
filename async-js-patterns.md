@@ -35,4 +35,5 @@ $('div').click(event => {...});
 
 ## Event loop?
 
-What is the event loop anyway?
+* What is the event loop anyway?
+* Async callbacks: don't unleash Zalgo!
