@@ -1,6 +1,6 @@
 const fs = require( 'fs' );
 
-function readdir( fileName ) {
+function readdir( dir ) {
 		return new Promise( ( resolve, reject ) => {
 			fs.readdir( dir, ( err, files ) => {
 				if ( err ) reject( err );
@@ -19,8 +19,12 @@ function readFile( fileName ) {
 };
 
 function getAllFiles( dir ) {
-
+	return readdir( dir )
+		.then( files => files.map( f => dir + '/' + f ) )
+		.then( filePaths => filePaths.map( f => readFile( f ) ) )
+		.then( promises => Promise.all( promises ) );
 }
 
 getAllFiles( __dirname + '/dir' )
-	.then( files => console.log( files ) );
+	.then( files => console.log( files ) )
+	.catch( err => console.log( err ) );
