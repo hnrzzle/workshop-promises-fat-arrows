@@ -1,7 +1,7 @@
 Three JavaScript Functional Patterns
 ===
 
-## "Functional" programming
+### "Functional" programming
 
 ```js
 array.map( x => x * x );
@@ -10,7 +10,7 @@ array.map( x => x * x );
 * synchronous 
 * happens `0` to `n` times
 
-## Aynchronous "callbacks"
+### Aynchronous "callbacks"
 
 ```js
 fs.readFile('foo.txt', (err, buffer) => {...});
@@ -20,7 +20,7 @@ fs.readFile('foo.txt', (err, buffer) => {...});
 * happens once and only once
 * __Promises only apply to this category__
 
-## Event emitters
+### Event emitters
 
 ```js
 app.get('/foo', (req, res) => {...});
@@ -32,3 +32,7 @@ $('div').click(event => {...});
 
 * (sync to ) asynchronous (observers)
 * `0` to `n` times in time
+
+## Event loop?
+
+What is the event loop anyway?
