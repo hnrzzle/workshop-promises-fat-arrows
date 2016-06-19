@@ -14,11 +14,12 @@
 	* help each other
 	* [Setup Check](setup-check.md)
 * Background
-	* What's the [issue with callbacks](why-not-callbacks.md)?
-	* `=>` (fat) [arrow functions](fat-arrows.md)
 	* What's [async](async-js-patterns.md)?
+	* `=>` (fat) [arrow functions](fat-arrows.md)
+	* What's the [issue with callbacks](why-not-callbacks.md)?
 * Promises
 	* From [callbacks to promises](callback-to-promise.md)
+	* [Basic promises](promise-basic.md)
 	* [Promise chaining](promise-chaining.md)
 	* [Error handling](error-handling.md)...
 	* [Promise static methods](promise-static.md)
