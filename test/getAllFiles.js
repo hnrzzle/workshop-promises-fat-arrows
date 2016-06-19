@@ -8,6 +8,6 @@ function getAllFiles( dir ) {
     .then( filePromises => Promise.all( filePromises ) )
 }
 
-getAllFiles('./test/dir')
+getAllFiles( __dirname + '/dir')
 	.then( files => console.log(files) )
 	.catch( err => console.err(err) );
