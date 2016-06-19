@@ -16,12 +16,12 @@ Create array of promises from array of inputs
 
 ```js
 getUsers(query)
-    .then(users => users.map(u => u.groupId))
-		.then(ids => ids.map(id => getGroup(id))
-		.then(Promise.all)
-    .then(groups => {
-			// do something with groups
-		});
+	.then(users => users.map(u => u.groupId))
+	.then(ids => ids.map(id => getGroup(id))
+	.then(groupPromises => Promise.all(groupPromises) )
+	.then(groups => {
+		// do something with groups
+	});
 ```
 
 ## `Promise.race`

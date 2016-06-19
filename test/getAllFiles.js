@@ -1,13 +1,19 @@
-const sander = require('sander')
+const fs = require( 'fs' );
 
-function getAllFiles( dir ) {
+function readdir( fileName ) {
+		return new Promise( ( resolve, reject ) => {
+			fs.readdir( dir, ( err, files ) => {
+				if ( err ) reject( err );
+				else resolve( files );
+			});
+		});
+};
 
-  return sander.readdir( dir )
-    .then( files => files.map( f => `${dir}/${f}` ) )
-    .then( paths => paths.map( p => sander.readFile( p, { encoding: 'utf-8' } ) ) )
-    .then( filePromises => Promise.all( filePromises ) )
-}
-
-getAllFiles( __dirname + '/dir')
-	.then( files => console.log(files) )
-	.catch( err => console.err(err) );
+function readFile( fileName ) {
+		return new Promise( ( resolve, reject ) => {
+			fs.readFile( fileName, 'utf-8', ( err, text ) => {
+				if ( err ) reject( err );
+				else resolve( text );
+			});
+		});
+};
