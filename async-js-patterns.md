@@ -4,7 +4,7 @@ Three JavaScript Functional Patterns
 ### "Functional" programming
 
 ```js
-array.map( x => x * x );
+array.map(x => x * x);
 ```
 
 * synchronous 
