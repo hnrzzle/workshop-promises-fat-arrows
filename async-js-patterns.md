@@ -23,6 +23,8 @@ fs.readFile('foo.txt', (err, buffer) => {...});
 ### Event emitters
 
 ```js
+http.createServer((req, res) => {...});
+
 app.get('/foo', (req, res) => {...});
 
 element.addEventListener('click', event => {...});
