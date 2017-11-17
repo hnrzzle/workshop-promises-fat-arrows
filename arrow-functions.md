@@ -15,7 +15,7 @@ _becomes_
 	return x + 5;
 }
 ```
-## Slimming Down
+## Terse Syntax
 
 ### single parameter?
 _parens may be omitted..._
